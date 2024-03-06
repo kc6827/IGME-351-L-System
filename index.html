@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SVG Generator</title>
+    <script src="scripts/components.js"></script>
+    <script src="scripts/svgs.js"></script>
+</head>
+
+<body>
+    <body style="background-color:#dcdcdc">
+    <!-- <select>
+        <option>Original</option>
+        <option>Alternate 1</option>
+    </select> -->
+    <label for="iterations">Iterations:</label>
+    <input type="text" id="iterations" name="iterations" maxlength="2" size="1" />
+    <button> Generate </button>
+    <svg id="funnels"></svg>
+    <script>
+        var svg = svg1();
+        buttonPress();
+        selectChange();
+
+        document.querySelector('svg').outerHTML = svg;
+    </script>
+</body>
+
+</html>
